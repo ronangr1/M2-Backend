@@ -1,16 +1,13 @@
-# Add Fake Text Button (Module for Magento 2)
-[![Latest Stable Version](https://img.shields.io/packagist/v/ronangr1/module-add-fake-text-button.svg?style=flat-square)](https://packagist.org/packages/ronangr1/module-add-fake-text-button)
-[![License: MIT](https://img.shields.io/github/license/ronangr1/M2-AddFakeTextButton.svg?style=flat-square)](./LICENSE) 
-[![Packagist](https://img.shields.io/packagist/dt/ronangr1/module-add-fake-text-button.svg?style=flat-square)](https://packagist.org/packages/ronangr1/module-add-fake-text-button/stats)
+# Backend (Module for Magento 2)
+[![Latest Stable Version](https://img.shields.io/packagist/v/ronangr1/module-backend.svg?style=flat-square)](https://packagist.org/packages/ronangr1/module-backend)
+[![License: MIT](https://img.shields.io/github/license/ronangr1/M2-Backend.svg?style=flat-square)](./LICENSE) 
+[![Packagist](https://img.shields.io/packagist/dt/ronangr1/module-backend.svg?style=flat-square)](https://packagist.org/packages/ronangr1/module-backend/stats)
 
 
 
 - [Setup](#setup)
     - [Composer installation](#composer-installation)
     - [Setup the module](#setup-the-module)
-- [Features](#features)
-- [Settings](#settings)
-- [Documentation](#documentation)
 - [Support](#support)
 - [Authors](#authors)
 - [License](#license)
@@ -24,7 +21,7 @@ Magento 2 Open Source or Commerce edition is required.
 Run the following composer command:
 
 ```
-composer require ronangr1/module-add-fake-text-button
+composer require ronangr1/module-backend
 ```
 
 ### Setup the module
@@ -32,40 +29,11 @@ composer require ronangr1/module-add-fake-text-button
 Run the following magento command:
 
 ```
-bin/magento setup:upgrade
-bin/magento s:s:d -f
+bin/magento se:up
 bin/magento ca:cl
 ```
 
 **If you are in production mode, do not forget to recompile and redeploy the static resources.**
-
-## Features
-
-### Generate fake text
-
-Add a button that allows to generate fake text.
-
-## Settings
-
-The configuration for this module is available in `Stores > Configuration > Ronangr1 > Fake Text`.
-
-## Documentation
-
-### How to add the button
-
-Example on `cms_block_form.xml`:
-
-```xml
-<field name="content" formElement="wysiwyg">
-    <argument name="data" xsi:type="array">
-        <item name="config" xsi:type="array">
-            <item name="wysiwygConfigData" xsi:type="array">
-                <item name="add_faketext" xsi:type="boolean">true</item>
-            </item>
-        </item>
-    </argument>
-</field>
-```
 
 ## Support
 

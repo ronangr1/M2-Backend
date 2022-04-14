@@ -1,0 +1,22 @@
+{
+    "name": "ronangr1/module-backend",
+    "description": "N/A",
+    "type": "magento2-module",
+    "license": "MIT",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Ronan Guérin",
+            "email": "guerin.ronan@aol.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ronangr1\\Backend\\": ""
+        }
+    }
+}
